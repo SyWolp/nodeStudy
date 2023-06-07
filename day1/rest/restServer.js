@@ -18,10 +18,16 @@ const restServer = http
         } else if (req.url === "/about") {
           await parseHtml(res, path.join(__dirname, "about.html"));
         } else if (req.url === "/users") {
+          console.log(1);
           res.writeHead(200, {
             "Content-Type": "application/json; charset=utf-8",
           });
           return res.end(JSON.stringify(users));
+        } else if (req.url === "/qwer") {
+          res.writeHead(200, {
+            "Content-Type": "application/json; charset=utf-8",
+          });
+          res.end(JSON.stringify({ 이거: "거덩" }));
         }
         try {
           await parseHtml(res, path.join(__dirname, req.url));
