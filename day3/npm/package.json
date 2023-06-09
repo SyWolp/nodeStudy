@@ -1,0 +1,12 @@
+{
+  "name": "npmtest-3608",
+  "version": "1.0.0",
+  "description": "hello npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "Hello",
+    "start": "node index"
+  },
+  "author": "syWolp",
+  "license": "MIT"
+}
